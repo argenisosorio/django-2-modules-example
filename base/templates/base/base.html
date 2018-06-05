@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>{% block title %}Base{% endblock %}</title>
+</head>
+<body>
+  <a href="{% url 'start:index' %}">Start module</a> | <a href="{% url 'users:index' %}">Users module</a> | <a href="{% url 'projects:index' %}">Projects module</a>
+  {% block body %}
+    Base
+  {% endblock %}
+  </body>
+</html>
